@@ -96,8 +96,11 @@ export const SignUp = () => {
     }).then((res) => {
       if (res.ok) {
         setUsername("");
+        setEmail('')
         setPassword([]);
         setConfirmPassword([]);
+        setIsPasswordEntered(false)
+        alert('Signup Successful')
       }
     });
 
